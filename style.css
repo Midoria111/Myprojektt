@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap');
+
+*,*::before,*::after{
+box-sizing: border-box;
+}
+
+
+body{
+ margin: 0;
+ font-family: 'poppins', sans-serif;
+ font-size: 15px;
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+
+}
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.btn{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    height: 50px;
+    font-weight: 500;
+    background-color: rgb(219, 37, 18);
+    min-width: 200px;
+    padding: 0px 15px;
+    transition:background-color .2s ease;
+}
+
+.btn:hover{
+    background-color: #863c34;
+    
+}
+
+.header{
+     /* background-color: black; */
+     width: 100%;
+     position: absolute;
+     top:0;
+     left: 0;
+     z-index: 2;
+
+} 
+
+.header__wrapper{
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__block{
+    width: 20%;
+}
+
+/* .header__block:last-child{ 
+    text-align: right;
+}*/
+
+.nav{
+display:flex;
+}
+
+.nav__link{
+    margin-right: 35px;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 600;
+    position: relative;
+}
+
+.nav__link:after{
+width: 100%;
+height: 2px;
+background-color: white;
+position: absolute;
+top: 100%;
+left: 0;
+content: '';
+opacity: 0;
+transition: opacity .2s ease;
+}
+
+.nav__link:last-child{
+    margin-right: 0;
+    justify-content: flex-end;
+}
+
+.nav__link:hover:after{
+    opacity: 1;
+}
+
+.nav__link.active:after{
+    opacity: 1;
+}
+
+.header__lng{
+display: flex;
+}
+
+.header__lng-link{
+    margin-right: 8px;
+
+    color:#b7b7b7;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+
+}
+
+.header__lng-link:last-child{
+    margin-right: 0;
+}
+
+.header__lng-link.active{
+    color: white;
+}
+
+
+
+.intro{
+    background: url('../img/introbg.jpeg') no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+
+
+.intro__content{
+    height: 750px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+
+}
+.intro:after{
+width: 100%;
+height: 100%;
+
+position: absolute;
+top: 0;
+left: 0;
+
+/* background-color: #ffffff; */
+overflow: .2;
+content: '';
+}
+
+.intro__block{
+
+}
+
+
+.intro__title{
+    max-width:790px;
+    font-size: 48px;
+    font-weight: 700;
+    color: white;
+    line-height: 1.5;
+}
